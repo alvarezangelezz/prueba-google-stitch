@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Montserrat:ital,wght@0,300..700;1,300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-container":"#fed488","outline":"#847375","on-secondary-fixed-variant":"#5d4201","secondary":"#775a19","primary-fixed":"#ffd9de","secondary-fixed":"#ffdea5","on-error":"#ffffff","on-secondary-container":"#785a1a","surface-container":"#f5eced","tertiary-fixed-dim":"#f3b8b8","surface-container-high":"#efe6e7","inverse-primary":"#ffb2bf","surface-dim":"#e1d8d9","on-tertiary-fixed":"#321112","surface-container-low":"#fbf1f2","surface":"#fff8f8","on-secondary-fixed":"#261900","on-primary-fixed":"#390917","on-surface-variant":"#524345","inverse-surface":"#342f30","surface-container-highest":"#e9e0e1","error":"#ba1a1a","background":"#fff8f8","primary-fixed-dim":"#ffb2bf","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#6f3441","secondary-fixed-dim":"#e9c176","on-primary":"#ffffff","on-tertiary-container":"#ffcccc","tertiary":"#653b3c","on-error-container":"#93000a","on-tertiary-fixed-variant":"#653b3c","surface-bright":"#fff8f8","inverse-on-surface":"#f8efef","on-primary-container":"#ffcbd3","error-container":"#ffdad6","on-background":"#1e1b1c","on-secondary":"#ffffff","primary-container":"#8b4b58","primary":"#6f3441","on-tertiary":"#ffffff","surface-tint":"#8b4b58","outline-variant":"#d7c1c4","surface-variant":"#e9e0e1","on-surface":"#1e1b1c","tertiary-container":"#805252","tertiary-fixed":"#ffdad9"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-sm":"0.5rem","space-lg":"1.75rem","margin-tablet":"2.5rem","space-xs":"0.25rem","margin":"1.25rem","gutter-desktop":"2.5rem","gutter":"1.5rem","space-md":"1rem","space-xl":"3xl","margin-desktop":"5rem"},"fontFamily":{"display":["EB Garamond"],"body-md":["Montserrat"],"headline-lg-mobile":["EB Garamond"],"headline-sm":["EB Garamond"],"label-lg":["Montserrat"],"label-md":["Montserrat"],"label-sm":["Montserrat"],"body-lg":["Montserrat"],"headline-md":["EB Garamond"],"headline-lg":["EB Garamond"],"display-mobile":["EB Garamond"],"body-sm":["Montserrat"]},"fontSize":{"display":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.01em","fontWeight":"400"}],"body-md":["0.9375rem",{"lineHeight":"1.5rem","letterSpacing":"0.02em","fontWeight":"400"}],"headline-lg-mobile":["2rem",{"lineHeight":"2.5rem","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["1.375rem",{"lineHeight":"1.75rem","letterSpacing":"0.02em","fontWeight":"500"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.12em","fontWeight":"500"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.14em","fontWeight":"500"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.18em","fontWeight":"600"}],"body-lg":["1.0625rem",{"lineHeight":"1.75rem","letterSpacing":"0.02em","fontWeight":"300"}],"headline-md":["1.875rem",{"lineHeight":"2.25rem","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["2.5rem",{"lineHeight":"3rem","letterSpacing":"0em","fontWeight":"400"}],"display-mobile":["2.5rem",{"lineHeight":"3rem","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["0.8125rem",{"lineHeight":"1.25rem","letterSpacing":"0.03em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_2px_12px_rgba(35,31,32,0.04)]"><div class="w-full bg-surface-container-high py-1 px-4 text-center"><p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Livraison gracieuse à partir de 95€ • Consultoría de Belleza Personalizada para cada etapa de la vida</p></div><div class="h-28 max-w-[1440px] mx-auto px-6 lg:px-20 flex flex-col justify-between py-2"><div class="flex items-center justify-between gap-6"><div class="flex items-center gap-6"><div class="flex items-center gap-3"><img alt="Aurelia Maison de Beauté Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UZi0P_08vd7YVErUXhnUUd3iAmerTHXP6e7UvheYzLnYNaGhyygPdurRxdVwSOv6AtZgypnJubgJDW9fympYI6_r1EyfRq-o3yCzaKiz-w506CHiq0WowuPjOJemOVppJI4kE1BY60-NECQtW-Xx6LHBvaXjt4udmGCjxc1gF9pRdyKpSl9ZStoU52qOlyNiwCI10s9AHPBSWstRhMXTGngZ2TLrDiRqX_eXaiLaJUCtW5kKcumR7YkQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-wide leading-none">AURELIA</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.25em] -mt-1">Maison de Beauté • 1928</span></div></div><div class="hidden xl:flex items-center gap-2 pl-4 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider"><span class="hover:text-primary transition-colors cursor-pointer">EUR (€)</span><span class="text-outline-variant">/</span><span class="hover:text-primary transition-colors cursor-pointer">FR</span></div></div><div class="hidden md:flex flex-1 max-w-md mx-6"><div class="relative w-full flex items-center bg-surface-container-low px-3 py-1.5 rounded"><span class="material-symbols-outlined text-secondary text-[18px] mr-2">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none" placeholder="Buscar elixires, polvos o rituales..." type="text"/></div></div><div class="flex items-center gap-4 lg:gap-6"><button class="flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md tracking-wider" type="button"><span class="material-symbols-outlined text-[20px]">favorite</span><span class="hidden lg:inline uppercase">Deseos</span></button><button class="flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md tracking-wider" type="button"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="hidden lg:inline uppercase">Cesta</span><span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">0</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><nav class="hidden lg:flex items-center justify-center gap-8 py-1" data-active-classes="text-primary font-semibold underline underline-offset-8 decoration-secondary"><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="colecciones-de-epoca" href="#">Colecciones de Época</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="tez-y-rostro-sublime" href="#">Tez &amp; Rostro Sublime</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="labios-de-seda" href="#">Labios de Seda</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="miradas-clasicas" href="#">Miradas Clásicas</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="cuidado-intergeneracional" href="#">Cuidado Intergeneracional (15 - 70)</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="el-atelier-y-citas" href="#">El Atelier &amp; Citas</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="herencia-1928" href="#">Herencia 1928</a></nav></div></header><main class="w-full pt-28 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-container-low pb-20 pt-8 lg:pb-32 lg:pt-16">
+<!-- Atmospheric subtle gradients and antique ornaments -->
+<div class="pointer-events-none absolute -top-40 right-0 h-[600px] w-[600px] rounded-full bg-primary/5 blur-3xl"></div>
+<div class="pointer-events-none absolute -bottom-32 left-10 h-[500px] w-[500px] rounded-full bg-secondary/10 blur-3xl"></div>
+<div class="mx-auto max-w-[1440px] px-6 lg:px-20">
+<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
+<!-- Left: Majestic Editorial Copy -->
+<div class="flex flex-col items-start lg:col-span-7">
+<div class="mb-4 inline-flex items-center gap-2 rounded-full bg-surface-container px-3.5 py-1.5 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">Maison Parisienne d'Apothicaire</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Édition 1928</span>
+</div>
+<h1 class="font-display text-display text-on-surface max-w-2xl leading-none tracking-tight">
+            El Arte Atemporal de la <span class="italic text-primary">Belleza Auténtica</span>
+</h1>
+<p class="mt-6 max-w-xl font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Fórmulas minerales de herencia botánica creadas para iluminar cada década de la vida: desde el primer rubor juvenil de los 15 hasta la serenidad y nobleza majestuosa de los 70.
+          </p>
+<!-- Dual CTAs -->
+<div class="mt-8 flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center justify-center rounded bg-primary px-8 py-3.5 font-label-md text-label-md uppercase tracking-[0.16em] text-on-primary shadow-md transition-all hover:bg-on-primary-fixed-variant hover:shadow-lg" href="#coleccion">
+<span>Descubrir Colección Clásica</span>
+<span class="material-symbols-outlined ml-2 text-[18px]">east</span>
+</a>
+<a class="inline-flex items-center justify-center rounded bg-surface-container px-7 py-3.5 font-label-md text-label-md uppercase tracking-[0.16em] text-secondary shadow-sm transition-all hover:bg-secondary-container hover:text-on-secondary-container" href="#consultoria">
+<span class="material-symbols-outlined mr-2 text-[18px]">auto_fix_high</span>
+<span>Diagnóstico por Edad</span>
+</a>
+</div>
+<!-- Micro trust indicators -->
+<div class="mt-10 flex flex-wrap items-center gap-6 text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">spa</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Hipoalergénico Verificado</span>
+</div>
+<span class="text-outline-variant hidden sm:inline">•</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">filter_vintage</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Extractos Botánicos Vivos</span>
+</div>
+<span class="text-outline-variant hidden sm:inline">•</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">lock_reset</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Estuches Recargables</span>
+</div>
+</div>
+</div>
+<!-- Right: Archival Still-Life Composition with Botanical Seal -->
+<div class="relative lg:col-span-5">
+<!-- Backing warm panel mimicking antique framing -->
+<div class="relative mx-auto max-w-md rounded-xl bg-surface-container-highest/60 p-4 shadow-xl">
+<div class="overflow-hidden rounded-lg bg-surface">
+<img class="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Editorial luxury still life photography of vintage cosmetic heirlooms on antique French silk damask. Heavy brass powder compact with embossed filigree engraving, heavy cut crystal flacon of liquid foundation, dark burgundy lipstick tube in antique vermeil casing, soft velvet powder puff, scattered dried pink damascena rose petals. Soft morning museum window lighting, warm tones, deep burgundy accents, muted champagne gold, extremely sharp macro details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB8LhlMhlnLgM8L7mV-xZgQeWuw-Zz1rs6kUFcGGeQ9aGWhiw6uH4LdI86rEecW9C6tcyyeoVIzxiuF87tfL7DwzZ_uo4vStkEqS-g-mUfTGLncAnS3RDna_mNBn0myBJLvbLzuaMGXn8FmGNc-hREeiWUnx_LGU5e2LgD9A9KRkpR5qCPauGET98ZSJ6ENRbmpEW1tdvUeaviOzfGhdhCWdO4rQEcTEdy8PrO9FxBiqlrM1Y626E"/>
+</div>
+<!-- Floated Classical Heritage Seal Stamp -->
+<div class="absolute -bottom-6 -left-6 flex h-28 w-28 flex-col items-center justify-center rounded-full bg-secondary-fixed text-on-secondary-fixed shadow-xl">
+<span class="material-symbols-outlined text-[26px] text-secondary">verified</span>
+<span class="font-label-sm text-[9px] uppercase tracking-[0.2em] font-bold text-center leading-tight mt-1">Formulado en París<br/>• Desde 1928 •</span>
+</div>
+<!-- Miniature Brass Plaque Overlay -->
+<div class="absolute -top-4 right-4 rounded bg-primary-container px-3.5 py-1.5 shadow-md">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-on-primary">Haute Parfumerie &amp; Beauté</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Pillars Ribbon Bar -->
+<div class="mt-16 rounded-xl bg-surface shadow-md p-6 lg:p-8">
+<div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
+<div class="flex items-center gap-4">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[24px]">psychiatry</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary">98% Botánicos</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ingredientes de pureza biológica cosechados a mano en Grasse.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 md:border-l md:border-surface-container-highest md:pl-8">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[24px]">hourglass_top</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary">15 a 70+ Años</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fórmulas adaptogénicas sensibles a la elasticidad de cada edad.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 md:border-l md:border-surface-container-highest md:pl-8">
+<div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[24px]">diamond</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary">Pigmentos Puros</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Minerales micronizados sin talcos pesados ni microplásticos.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. INTERGENERATIONAL TARGETS (15 TO 70+ YEARS) -->
+<section class="w-full bg-surface py-20 lg:py-28" id="etapas">
+<div class="mx-auto max-w-[1440px] px-6 lg:px-20">
+<!-- Section Header -->
+<div class="mx-auto max-w-2xl text-center">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">Trilogía Generacional</span>
+<h2 class="mt-2 font-headline-lg text-headline-lg text-on-surface">
+          Una Filosofía de Belleza para <span class="italic text-primary">Cada Capítulo de la Vida</span>
+</h2>
+<p class="mt-4 font-body-md text-body-md text-on-surface-variant">
+          La piel respira y se transforma a través de los años. No buscamos revertir el tiempo, sino coronar cada etapa con su fulgor más noble e inimitable.
+        </p>
+</div>
+<!-- Generational Cards Grid -->
+<div class="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+<!-- Tier 1: 15 - 25 years -->
+<div class="group flex flex-col justify-between rounded-xl bg-surface-container-low p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl">
+<div>
+<div class="relative overflow-hidden rounded-lg bg-surface">
+<img class="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Fine art portrait of a radiant young French woman aged 19 with luminous bare-skin makeup, natural dewy flushed cheeks, faint freckles, soft rosebud petal lips, soft classical backlight, artistic archival photograph in Parisian sunlit loft." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCeCBoAJGkN2fnnx6uBHUe-1vOA_az0ZouTedV1CUxgDr8btdKqIlnvgwrUUdN__UVUs6p7ovHC6MM0IFW56cAwF7FpdhqVHd8v08wlppXzF4PLLE5WlrVd26hSVI3-at7cTa1NWKHGRhGCeAlBuEQ5k8TG-Lwg5kZpROs3O4wu3fm-rzXO5yQ5FigAKoL_jfvBYp_sfjKbEukHZp_q3exX77Q-4iewLtsGVZoJ_kfbVyOFedPoxI"/>
+<span class="absolute top-3 left-3 rounded-full bg-surface/90 backdrop-blur-sm px-3 py-1 font-label-sm text-label-sm uppercase tracking-widest text-primary font-medium">
+                15 — 25 Años
+              </span>
+</div>
+<div class="mt-6">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.18em] text-secondary">Primeras Esencias</span>
+<h3 class="mt-1 font-headline-md text-headline-md text-on-surface">La Flor de la Juventud</h3>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Maquillaje etéreo con tintes labiales infundidos en pétalos de rosa fresca, polvos no oclusivos y bálsamos iluminadores ricos en escualano vegetal para una tez jugosa y libre de impurezas.
+              </p>
+</div>
+<!-- Key traits -->
+<div class="mt-5 space-y-2 rounded-lg bg-surface p-3.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant uppercase tracking-wider">Activo Central:</span>
+<span class="font-semibold text-primary">Agua Floral de Azahar</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant uppercase tracking-wider">Acabado Ideal:</span>
+<span class="font-semibold text-secondary">Jugoso • Cristalino</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant uppercase tracking-wider">Tono Insignia:</span>
+<span class="font-semibold text-on-surface">Rose Poudré Nº 01</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4">
+<button class="w-full rounded bg-surface-container-highest py-3 font-label-sm text-label-sm uppercase tracking-widest text-on-surface transition-colors hover:bg-primary hover:text-on-primary">
+              Ver Selección Personalizada
+            </button>
+</div>
+</div>
+<!-- Tier 2: 26 - 45 years -->
+<div class="group flex flex-col justify-between rounded-xl bg-surface-container p-6 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl relative ring-1 ring-secondary/20">
+<div class="absolute -top-3 right-6 rounded-full bg-secondary px-3 py-0.5 font-label-sm text-[10px] uppercase tracking-widest text-on-secondary font-bold">
+            Ritual Insignia
+          </div>
+<div>
+<div class="relative overflow-hidden rounded-lg bg-surface">
+<img class="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Editorial portrait of an elegant woman aged 35 with defined classic makeup, velvety crimson matte lips, soft winged eyeliner, flawless satin skin, wearing an ivory silk blouse, Parisian vintage atelier setting, warm studio light, high-fashion archival look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6uGzYEOJ82ZHVegkxDQvLtNSKAlXOQInwhRYgQsOx-Ftog94-DO51YylaX6afqT5ClEot0iwvkHqOg6ZoPtLu_ZkYdf1_-OxcsFt26BAB0l0HlKdbMjQPXuG5Fdpanx8G-xtykj14AlW1Lco4om6M9Z2QmoFWUNXnGkLbOj6usFaCibG2mU4fO2Hw1YsheQBRnptnqc_CF3Z4EMKNrtJt8d9YpzaCpBpzJsJqrYHTTsa8-O5BJ58"/>
+<span class="absolute top-3 left-3 rounded-full bg-primary px-3 py-1 font-label-sm text-label-sm uppercase tracking-widest text-on-primary font-medium">
+                26 — 45 Años
+              </span>
+</div>
+<div class="mt-6">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.18em] text-secondary">Perfección Soberana</span>
+<h3 class="mt-1 font-headline-md text-headline-md text-on-surface">Elegancia &amp; Definición</h3>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Bases de velo satinado con corrección óptica de la fatiga, polvos traslúcidos anti-brillo enriquecidos con seda micronizada y barras carmín aterciopeladas inspiradas en las divas de la época dorada.
+              </p>
+</div>
+<!-- Key traits -->
+<div class="mt-5 space-y-2 rounded-lg bg-surface-container-lowest p-3.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant uppercase tracking-wider">Activo Central:</span>
+<span class="font-semibold text-primary">Micro-Polvos de Perla</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant uppercase tracking-wider">Acabado Ideal:</span>
+<span class="font-semibold text-secondary">Satén Mate • Pulido</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant uppercase tracking-wider">Tono Insignia:</span>
+<span class="font-semibold text-on-surface">Carmin Impérial Nº 19</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4">
+<button class="w-full rounded bg-primary py-3 font-label-sm text-label-sm uppercase tracking-widest text-on-primary shadow-sm transition-colors hover:bg-on-primary-fixed-variant">
+              Ver Selección Personalizada
+            </button>
+</div>
+</div>
+<!-- Tier 3: 46 - 70+ years -->
+<div class="group flex flex-col justify-between rounded-xl bg-surface-container-low p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl">
+<div>
+<div class="relative overflow-hidden rounded-lg bg-surface">
+<img class="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Editorial portrait of a majestic, serene French woman aged 68 with natural silver hair in a soft chignon, wearing a cashmere wrap. Glowing luminous skin, subtle cream bronze eyeshadow, nourishing coral-rose lip luster, radiating nobility, confidence, and grace. Warm museum chiaroscuro lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxd4F7IJjNTNeoZ7JYH4R8K-bP7Uz8Uxy6FOSi--2kFSg12XEzE5uPrFwA38A0RJJRMUprJ1nxcwfWVfUcrfJ7tv_NkgYvWjY50oNs6epVcywZP6GoZLA3xxZlS7oTTdh4aDgFPR6MrwemTCtUksykoarm0-HYypcDyOSGKdTmEUDVnE6mUJ3Ykh5OuRq_jBu2IpzVIsqsj-y7GFZcAun_2XfpGzKxHNpSed7n9e_N-KaZkdWkK28"/>
+<span class="absolute top-3 left-3 rounded-full bg-surface/90 backdrop-blur-sm px-3 py-1 font-label-sm text-label-sm uppercase tracking-widest text-secondary font-medium">
+                46 — 70+ Años
+              </span>
+</div>
+<div class="mt-6">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.18em] text-secondary">Distinción Serena</span>
+<h3 class="mt-1 font-headline-md text-headline-md text-on-surface">Nobleza &amp; Resplandor Maduro</h3>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Sueros pigmentados ultraligeros con fitoceramidas que no se acumulan en líneas finas, cremas iluminadoras reafirmantes, sombras cálidas en textura soufflé y bálsamos voluminizadores a base de péptidos botánicos.
+              </p>
+</div>
+<!-- Key traits -->
+<div class="mt-5 space-y-2 rounded-lg bg-surface p-3.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant uppercase tracking-wider">Activo Central:</span>
+<span class="font-semibold text-primary">Rosa Mosqueta &amp; Orquídea</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant uppercase tracking-wider">Acabado Ideal:</span>
+<span class="font-semibold text-secondary">Hidro-Luminoso • Velo de Seda</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant uppercase tracking-wider">Tono Insignia:</span>
+<span class="font-semibold text-on-surface">Bois de Rose Nº 07</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4">
+<button class="w-full rounded bg-surface-container-highest py-3 font-label-sm text-label-sm uppercase tracking-widest text-on-surface transition-colors hover:bg-primary hover:text-on-primary">
+              Ver Selección Personalizada
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. EMBLEMATIC PRODUCT CAROUSEL (LE RELIQUAIRE) -->
+<section class="w-full bg-surface-container-low py-20 lg:py-28" id="coleccion">
+<div class="mx-auto max-w-[1440px] px-6 lg:px-20">
+<!-- Carousel Header Controls -->
+<div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">Le Reliquaire d’Or</span>
+<h2 class="mt-2 font-headline-lg text-headline-lg text-on-surface">Piezas Icónicas de Tocador</h2>
+<p class="mt-2 font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Objetos de devoción cosmética: recipientes recargables en latón repujado, fórmulas minerales prensadas en frío y texturas de leyenda.
+          </p>
+</div>
+<!-- Navigation Buttons -->
+<div class="flex items-center gap-3">
+<button aria-label="Anterior" class="flex h-11 w-11 items-center justify-center rounded-full bg-surface text-on-surface shadow-sm transition-all hover:bg-secondary-container hover:text-on-secondary-container active:scale-95" id="carousel-prev">
+<span class="material-symbols-outlined text-[20px]">west</span>
+</button>
+<button aria-label="Siguiente" class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-on-primary shadow-sm transition-all hover:bg-on-primary-fixed-variant active:scale-95" id="carousel-next">
+<span class="material-symbols-outlined text-[20px]">east</span>
+</button>
+</div>
+</div>
+<!-- Carousel Container -->
+<div class="mt-12 overflow-hidden">
+<div class="flex gap-6 transition-transform duration-500 ease-out" id="product-track">
+<!-- Product 1: Poudre Libre Royale -->
+<div class="w-[300px] shrink-0 sm:w-[340px] lg:w-[360px] flex flex-col justify-between rounded-xl bg-surface p-5 shadow-sm transition-all hover:shadow-xl">
+<div>
+<div class="relative overflow-hidden rounded-lg bg-surface-container-low p-4">
+<span class="absolute top-3 left-3 z-10 rounded bg-secondary px-2.5 py-0.5 font-label-sm text-[10px] uppercase tracking-wider text-on-secondary">
+                  Favorito Multigeneracional
+                </span>
+<img class="aspect-[4/3] w-full object-contain transition-transform duration-500 hover:scale-105" data-alt="Macro luxury product shot of antique brass round powder compact box carved with Art Nouveau motifs and Aurelia monogram. Soft silk puff dusted with translucent rice powder, warm champagne background, museum editorial clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVBP2vLXc3gA8fAbPJb9QrSRae-J8eKTTj5BtFWhXib3xJlMnibKJvWsaYqkcxBrYsbhwNez18_Ps4lTKXXsTpvS8p7qC3XE5t9udOrzHqljS0POh77_Nfuxnrrr4alnyjVAH-daifkKt4nDdQ09N5y68OjRyGq6Grp1zR1bBNBHkHuldg-7-otnLFgwOD9-Quz0DRVkp8x1sawqfxcJHUabQk9kdjy5qY3yh3Cffz6rA1xq9AYvk"/>
+</div>
+<div class="mt-5">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="ml-1 font-label-sm text-label-sm text-on-surface-variant font-normal">(184)</span>
+</div>
+<h3 class="mt-2 font-headline-sm text-headline-sm text-on-surface">Poudre Libre Royale</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+                  Polvo de arroz micronizado en polvera de latón tallado a mano. Sella sin acentuar textura ni poros.
+                </p>
+<!-- Shade swatches -->
+<div class="mt-4 flex items-center gap-2">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-outline">Tonos:</span>
+<span class="h-4 w-4 rounded-full bg-[#faecd9] shadow-inner ring-1 ring-secondary/40" title="01 Porcelana Fina"></span>
+<span class="h-4 w-4 rounded-full bg-[#f2dab6] shadow-inner" title="02 Alabastro Rosado"></span>
+<span class="h-4 w-4 rounded-full bg-[#dec093] shadow-inner" title="03 Ámbar Dorado"></span>
+</div>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-between border-t border-surface-container-highest pt-4">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Recargable</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">48,00 €</span>
+</div>
+<button class="flex items-center gap-1.5 rounded bg-surface-container px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider text-primary transition-colors hover:bg-primary hover:text-on-primary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+<!-- Product 2: Rouge Velours 1928 -->
+<div class="w-[300px] shrink-0 sm:w-[340px] lg:w-[360px] flex flex-col justify-between rounded-xl bg-surface p-5 shadow-sm transition-all hover:shadow-xl">
+<div>
+<div class="relative overflow-hidden rounded-lg bg-surface-container-low p-4">
+<span class="absolute top-3 left-3 z-10 rounded bg-primary px-2.5 py-0.5 font-label-sm text-[10px] uppercase tracking-wider text-on-primary">
+                  Édition Limitée
+                </span>
+<img class="aspect-[4/3] w-full object-contain transition-transform duration-500 hover:scale-105" data-alt="Luxury cosmetic photography of a heavy carved gold filigree lipstick tube with ruby-colored velvet cap opened to show an intense deep crimson matte lipstick bullet. Elegant antique vanity mirror reflection in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-IxViKwSrtCYDq_r5r9imcWtgDrnFClaBa0TgjeQpwembnYTz6cCbUmVaksUgzYV8ccVfdb4v82hhvnV99Csu2V4j6IxSBZLmjep92km1fKK6Y-a2OoMBiJ-3p1ts_62nAa2iYMpbhfGVEQfGam-v9HH8eyWPk0IfNSwXbfTTf8LVxs3IHKxnPdjL0yqtoHwthcn-mA5J5L1Iev4yXw74jF2uILssl3XXBXT8oNHsfEdKsiUhz1o"/>
+</div>
+<div class="mt-5">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="ml-1 font-label-sm text-label-sm text-on-surface-variant font-normal">(242)</span>
+</div>
+<h3 class="mt-2 font-headline-sm text-headline-sm text-on-surface">Rouge Velours 1928</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+                  Barra de labios semi-mate infusionada con cera de abeja pura y extracto de peonía francesa. Confort absoluto.
+                </p>
+<!-- Shade swatches -->
+<div class="mt-4 flex items-center gap-2">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-outline">Tonos:</span>
+<span class="h-4 w-4 rounded-full bg-[#8b1e2c] shadow-inner ring-1 ring-secondary/40" title="1928 Vermillon"></span>
+<span class="h-4 w-4 rounded-full bg-[#591b24] shadow-inner" title="Bourgogne Profond"></span>
+<span class="h-4 w-4 rounded-full bg-[#b85b67] shadow-inner" title="Pétale Ancien"></span>
+</div>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-between border-t border-surface-container-highest pt-4">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Estuche Joya</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">42,00 €</span>
+</div>
+<button class="flex items-center gap-1.5 rounded bg-surface-container px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider text-primary transition-colors hover:bg-primary hover:text-on-primary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+<!-- Product 3: Élixir Lumière Éternelle -->
+<div class="w-[300px] shrink-0 sm:w-[340px] lg:w-[360px] flex flex-col justify-between rounded-xl bg-surface p-5 shadow-sm transition-all hover:shadow-xl">
+<div>
+<div class="relative overflow-hidden rounded-lg bg-surface-container-low p-4">
+<span class="absolute top-3 left-3 z-10 rounded bg-secondary-container px-2.5 py-0.5 font-label-sm text-[10px] uppercase tracking-wider text-on-secondary-container">
+                  Innovación Botánica
+                </span>
+<img class="aspect-[4/3] w-full object-contain transition-transform duration-500 hover:scale-105" data-alt="Antique frosted glass pump flacon of luminous liquid serum foundation with an ornate brass dropper cap, sitting on a polished French marble pedestal next to delicate white botanical orchids, warm vintage lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBiMI0iPSE9D58CQ52GaZGyPSdyOkJV8i9prJmt70lcFFgmy2k67IBbRU_44m1_hIrYiRNLE4cM7sPIIsf9z9QMcrsj2ZLSmV1B6CZVKSuHKB0b0hy2qeEVjHill79Gx5OvZ0tVV4Yn8Ab4GRlqFfSWL6sdNuv7nr666rPUV1Ot40EwXQtFiI9YVPsLpx_Pk4wh1d0BhwubzuEGI9nAm4cCQuGyAxSjsjxR54F_qX52rmjFSQ2no4"/>
+</div>
+<div class="mt-5">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+<span class="ml-1 font-label-sm text-label-sm text-on-surface-variant font-normal">(119)</span>
+</div>
+<h3 class="mt-2 font-headline-sm text-headline-sm text-on-surface">Élixir Lumière Éternelle</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+                  Base fluida con ácido hialurónico triple peso y aceite de orquídea blanca. Cobertura construible y efecto segunda piel.
+                </p>
+<!-- Shade swatches -->
+<div class="mt-4 flex items-center gap-2">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-outline">Tonos:</span>
+<span class="h-4 w-4 rounded-full bg-[#fce9d2] shadow-inner" title="Ivoire Rose"></span>
+<span class="h-4 w-4 rounded-full bg-[#ebd0b0] shadow-inner ring-1 ring-secondary/40" title="Sable Doré"></span>
+<span class="h-4 w-4 rounded-full bg-[#ceaa82] shadow-inner" title="Caramel Doux"></span>
+</div>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-between border-t border-surface-container-highest pt-4">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Frasco 30ml</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">58,00 €</span>
+</div>
+<button class="flex items-center gap-1.5 rounded bg-surface-container px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider text-primary transition-colors hover:bg-primary hover:text-on-primary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+<!-- Product 4: Palette Yeux Impériale -->
+<div class="w-[300px] shrink-0 sm:w-[340px] lg:w-[360px] flex flex-col justify-between rounded-xl bg-surface p-5 shadow-sm transition-all hover:shadow-xl">
+<div>
+<div class="relative overflow-hidden rounded-lg bg-surface-container-low p-4">
+<span class="absolute top-3 left-3 z-10 rounded bg-surface-container px-2.5 py-0.5 font-label-sm text-[10px] uppercase tracking-wider text-on-surface">
+                  Clásico de Tocador
+                </span>
+<img class="aspect-[4/3] w-full object-contain transition-transform duration-500 hover:scale-105" data-alt="Luxury vintage four-pan eyeshadow palette opened inside an antique gilt bronze casing. Pans contain terracotta satin, champagne shimmer, warm chestnut matte, and soft ebony mineral pigments. Elegant Parisian boudoir background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc9bOB_4K1tndnE3951_s_rE0S8Qnw9Y6fSiKaGccoOH8CCJd8VaoRjD01H39Kdum-WnMujvoRvmKlIYgGUH2vtJwfdta6Nw0SMnsSQcEOU37ZRqJGB2aHmK9rmAX_t1bp3cbvk98N_iagJ8txL_0qjOGRHRFAZ2tVafgeH6tw0o8-5Vzj3sqLLV1DQLa5qc0RqN8TR_ldUv5GbBFmwYFti42xuwSaeUELrxzM770yzSJjXDasN7E"/>
+</div>
+<div class="mt-5">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="ml-1 font-label-sm text-label-sm text-on-surface-variant font-normal">(95)</span>
+</div>
+<h3 class="mt-2 font-headline-sm text-headline-sm text-on-surface">Palette Yeux Impériale</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+                  Cuarteto mineral en terracota, champán dorado y ébano aterciopelado. Pigmentación que no marca párpados secos.
+                </p>
+<!-- Shade swatches -->
+<div class="mt-4 flex items-center gap-2">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-outline">Gama:</span>
+<span class="h-4 w-4 rounded-full bg-[#dfc08f] shadow-inner" title="Champagne"></span>
+<span class="h-4 w-4 rounded-full bg-[#9e5f43] shadow-inner" title="Terracotta"></span>
+<span class="h-4 w-4 rounded-full bg-[#3b2b28] shadow-inner" title="Ébène"></span>
+</div>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-between border-t border-surface-container-highest pt-4">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Relicario 4 tonos</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">64,00 €</span>
+</div>
+<button class="flex items-center gap-1.5 rounded bg-surface-container px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider text-primary transition-colors hover:bg-primary hover:text-on-primary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+<!-- Product 5: Blush Rosée des Champs -->
+<div class="w-[300px] shrink-0 sm:w-[340px] lg:w-[360px] flex flex-col justify-between rounded-xl bg-surface p-5 shadow-sm transition-all hover:shadow-xl">
+<div>
+<div class="relative overflow-hidden rounded-lg bg-surface-container-low p-4">
+<span class="absolute top-3 left-3 z-10 rounded bg-secondary px-2.5 py-0.5 font-label-sm text-[10px] uppercase tracking-wider text-on-secondary">
+                  Favorito de la Crítica
+                </span>
+<img class="aspect-[4/3] w-full object-contain transition-transform duration-500 hover:scale-105" data-alt="Baked mineral dome blush inside an antique porcelain round compact with floral hand-painted vignettes. The blush has soft rose-gold marble marbling, warm soft glow, displayed beside a pure goat hair brass kabuki brush." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6FN1px7_EpFxUupd-dwD-KVDgU5E5k4t32QFAb-ResT4HN7IfyiC_GG87_T9frTrocbtiml1HPtSxYVfTSi7F_Z4w26Tfg_2xZM_fa_1SceAUo4z0ug6Mn-yOF5eOLD1I4LNlzS7_esgSgBiXsAqWwUlFF0VEMy74lanykszFxjRFbfwxXgvj-8LSXnPLQJziMhwM8DD4yYy0uaE30l6mamOqEQEld0buueHBJ9WWAyrtOvdHhUU"/>
+</div>
+<div class="mt-5">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="ml-1 font-label-sm text-label-sm text-on-surface-variant font-normal">(167)</span>
+</div>
+<h3 class="mt-2 font-headline-sm text-headline-sm text-on-surface">Blush Rosée des Champs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+                  Colorete horneado artesanalmente en terracota italiana. Brinda el rubor inocente de un paseo matinal por los viñedos.
+                </p>
+<!-- Shade swatches -->
+<div class="mt-4 flex items-center gap-2">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-outline">Tonos:</span>
+<span class="h-4 w-4 rounded-full bg-[#e88a91] shadow-inner ring-1 ring-secondary/40" title="Rose Fraîche"></span>
+<span class="h-4 w-4 rounded-full bg-[#d67b66] shadow-inner" title="Pêche d’Automne"></span>
+</div>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-between border-t border-surface-container-highest pt-4">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Horneado Lento</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">39,00 €</span>
+</div>
+<button class="flex items-center gap-1.5 rounded bg-surface-container px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider text-primary transition-colors hover:bg-primary hover:text-on-primary">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Progress Indicator Dots -->
+<div class="mt-8 flex justify-center gap-2" id="carousel-dots">
+<span class="h-1.5 w-8 rounded-full bg-primary transition-all"></span>
+<span class="h-1.5 w-2 rounded-full bg-outline-variant transition-all"></span>
+<span class="h-1.5 w-2 rounded-full bg-outline-variant transition-all"></span>
+</div>
+</div>
+</section>
+<!-- 4. EDITORIAL ESSAY & TIMELESS PHILOSOPHY -->
+<section class="w-full bg-surface py-20 lg:py-32 overflow-hidden">
+<div class="mx-auto max-w-[1440px] px-6 lg:px-20">
+<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-20">
+<!-- Left: Archival Frame with Decorative Seal -->
+<div class="relative lg:col-span-5">
+<div class="relative rounded-2xl bg-surface-container p-6 shadow-xl">
+<!-- Ornamental Border Effect -->
+<div class="overflow-hidden rounded-xl bg-surface">
+<img class="aspect-[3/4] w-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Emotional editorial black and white with sepia-tint photograph of three generations of French women together: a 19-year-old granddaughter, 45-year-old mother, and 70-year-old grandmother laughing intimately in an opulent Parisian salon, applying velvet rouge and admiring each other in an antique standing mirror. Fine grain, museum archive authenticity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpjQpWNWHVjw9jiTT9S_wAjHYY89rvvT65B-59W6bV2xYNpsvK_ZrcwVAUItJOkTujhjPiurOOjWN_oWmJy-riBmmiqt1PGWQJKSpVU1uOvZbf75jDs_m7Kbe98kAdZY_NlmJzSWTJYRoo-dEDa1YlevLHNfcqVf5EqWJn-7fcjRQJTWMkbArxN97z0wlrBFuf6XeQOTa_v_aLZbOirK1_WdGAJUtEYPGVcSUWqO3GgGyzS5ucoWA"/>
+</div>
+<!-- Floating Historic Quote Card -->
+<div class="absolute -bottom-6 -right-6 hidden sm:block max-w-[260px] rounded-lg bg-surface-container-lowest p-5 shadow-2xl ring-1 ring-secondary/20">
+<span class="material-symbols-outlined text-secondary text-[24px]">history_edu</span>
+<p class="mt-2 font-headline-sm text-[15px] italic leading-snug text-primary">
+                "El tocador es un altar familiar donde la sabiduría se transmite en susurros y aromas."
+              </p>
+<span class="mt-2 block font-label-sm text-[10px] uppercase tracking-widest text-on-surface-variant font-semibold">
+                Archivos Aurelia • París 1934
+              </span>
+</div>
+</div>
+</div>
+<!-- Right: Editorial Prose and Founders Credo -->
+<div class="flex flex-col lg:col-span-7">
+<div class="inline-flex items-center gap-2">
+<span class="h-px w-8 bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">Herencia &amp; Convicción</span>
+</div>
+<h2 class="mt-4 font-display text-[2.75rem] leading-[3.25rem] text-on-surface">
+            La Tradición del Espejo: Más de 90 años ennobleciendo <span class="italic text-primary">madres, hijas y abuelas</span>.
+          </h2>
+<div class="mt-6 rounded-r-lg border-l-2 border-secondary bg-surface-container-low p-5">
+<blockquote class="font-headline-md text-headline-sm italic text-tertiary">
+              "La verdadera elegancia no oculta la edad; la celebra con dignidad, serenidad y gracia perpetua."
+            </blockquote>
+<p class="mt-2 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+              — Aurelia de Valois, Fundadora y Maestra Perfumista
+            </p>
+</div>
+<p class="mt-6 font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Rechazamos las promesas efímeras de la cosmética sintética industrial. En nuestro atelier de la Rue Saint-Honoré, cada fórmula nace del encuentro entre la farmacopea botánica del siglo XIX y la biotecnología celular contemporánea. 
+          </p>
+<p class="mt-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Nuestros bálsamos y pigmentos no sellan la epidermis como una máscara inerte; respiran con ella. Formulados con total prescindencia de parabenos, siliconas oclusivas o sulfatos agresivos, resultan tan seguros para el cutis sensible de una joven de 16 años como nutritivos y elásticos para la piel noble y fina de los 70.
+          </p>
+<!-- Interactive Formulation Guarantee Badges -->
+<div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+<div class="rounded-lg bg-surface-container p-3 text-center">
+<span class="font-headline-sm text-headline-sm text-primary">0%</span>
+<p class="font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant mt-0.5">Parabenos</p>
+</div>
+<div class="rounded-lg bg-surface-container p-3 text-center">
+<span class="font-headline-sm text-headline-sm text-primary">100%</span>
+<p class="font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant mt-0.5">Hipoalergénico</p>
+</div>
+<div class="rounded-lg bg-surface-container p-3 text-center">
+<span class="font-headline-sm text-headline-sm text-primary">Bio</span>
+<p class="font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant mt-0.5">Cera de Abeja</p>
+</div>
+<div class="rounded-lg bg-surface-container p-3 text-center">
+<span class="font-headline-sm text-headline-sm text-primary">Grasse</span>
+<p class="font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant mt-0.5">Rosas de Mayo</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. INTERGENERATIONAL TESTIMONIALS CAROUSEL -->
+<section class="w-full bg-surface-container-low py-20 lg:py-28">
+<div class="mx-auto max-w-[1440px] px-6 lg:px-20">
+<div class="text-center max-w-2xl mx-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">Correspondencia de Tocador</span>
+<h2 class="mt-2 font-headline-lg text-headline-lg text-on-surface">Voces Vivas a Través de las Décadas</h2>
+<p class="mt-3 font-body-md text-body-md text-on-surface-variant">
+          Historias de tres generaciones unidas por el mismo frasco y la misma certeza de estilo.
+        </p>
+</div>
+<!-- Testimonial Grid / Cards -->
+<div class="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3">
+<!-- Sofía (19 years) -->
+<div class="flex flex-col justify-between rounded-xl bg-surface p-8 shadow-sm transition-all hover:shadow-lg">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="rounded bg-surface-container px-2.5 py-0.5 font-label-sm text-[11px] font-semibold text-primary">19 Años</span>
+</div>
+<p class="mt-6 font-headline-sm text-headline-sm text-on-surface italic leading-snug">
+              "El primer maquillaje que cuida mi piel sin generar imperfecciones."
+            </p>
+<p class="mt-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              "Odiaba la sensación pesada de las bases comerciales. El tinte botánico y el bálsamo labial me dan ese brillo sutil, elegante y fresco que buscaba para mi día a día en la facultad sin tapar mis pecas."
+            </p>
+</div>
+<div class="mt-8 flex items-center gap-3 border-t border-surface-container-highest pt-4">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-secondary-container text-on-secondary-container font-headline-sm">
+              S
+            </div>
+<div>
+<p class="font-headline-sm text-[16px] text-on-surface">Sofía M.</p>
+<p class="font-label-sm text-[11px] uppercase tracking-wider text-outline">Estudiante de Bellas Artes • Madrid</p>
+</div>
+</div>
+</div>
+<!-- Carmen (41 years) -->
+<div class="flex flex-col justify-between rounded-xl bg-surface p-8 shadow-md transition-all hover:shadow-lg ring-1 ring-secondary/20">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="rounded bg-primary px-2.5 py-0.5 font-label-sm text-[11px] font-semibold text-on-primary">41 Años</span>
+</div>
+<p class="mt-6 font-headline-sm text-headline-sm text-on-surface italic leading-snug">
+              "El Rouge Velours es mi armadura de distinción diaria."
+            </p>
+<p class="mt-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              "Entre reuniones y compromisos, necesito cosméticos nobles que permanezcan intactos sin resecar. Hidrata profundamente y su estuche recargable en latón labrado es admirado cada vez que lo saco de mi bolso."
+            </p>
+</div>
+<div class="mt-8 flex items-center gap-3 border-t border-surface-container-highest pt-4">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary-fixed text-on-primary-fixed font-headline-sm">
+              C
+            </div>
+<div>
+<p class="font-headline-sm text-[16px] text-on-surface">Carmen G. de la Vega</p>
+<p class="font-label-sm text-[11px] uppercase tracking-wider text-outline">Curadora de Arte • Barcelona</p>
+</div>
+</div>
+</div>
+<!-- Elena (68 years) -->
+<div class="flex flex-col justify-between rounded-xl bg-surface p-8 shadow-sm transition-all hover:shadow-lg">
+<div>
+<div class="flex items-center justify-between">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="rounded bg-secondary-fixed px-2.5 py-0.5 font-label-sm text-[11px] font-semibold text-on-secondary-fixed">68 Años</span>
+</div>
+<p class="mt-6 font-headline-sm text-headline-sm text-on-surface italic leading-snug">
+              "Revive la luminosidad de mi piel sin marcar una sola línea."
+            </p>
+<p class="mt-4 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              "A mi edad muchas bases se cuartean y acentúan las arrugas. El Élixir Lumière de Aurelia se funde como un suero sedoso y devuelve una lozanía serena que mi hija y mi nieta no dejan de elogiar."
+            </p>
+</div>
+<div class="mt-8 flex items-center gap-3 border-t border-surface-container-highest pt-4">
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-secondary-container text-on-secondary-container font-headline-sm">
+              E
+            </div>
+<div>
+<p class="font-headline-sm text-[16px] text-on-surface">Doña Elena R. Montes</p>
+<p class="font-label-sm text-[11px] uppercase tracking-wider text-outline">Pianista &amp; Catedrática • Sevilla</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Intergenerational Quote Footer -->
+<div class="mt-14 rounded-lg bg-surface-container p-6 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant">
+          "Un 94% de nuestras devotas comparten al menos un estuche de tocador Aurelia entre dos generaciones directas."
+        </p>
+</div>
+</div>
+</section>
+<!-- 6. PRIVATE CONSULTANCY & ATELIER APPOINTMENT CTA -->
+<section class="relative w-full overflow-hidden bg-primary py-20 lg:py-28 text-on-primary" id="consultoria">
+<!-- Fine Damask Ornaments / Atmospheric Backdrop -->
+<div class="pointer-events-none absolute -bottom-20 -left-20 h-96 w-96 rounded-full bg-primary-fixed/10 blur-3xl"></div>
+<div class="pointer-events-none absolute -top-20 -right-20 h-96 w-96 rounded-full bg-secondary-fixed/10 blur-3xl"></div>
+<div class="relative mx-auto max-w-[1440px] px-6 lg:px-20">
+<div class="mx-auto max-w-3xl text-center">
+<div class="inline-flex items-center gap-2 rounded-full bg-primary-container px-3.5 py-1 text-on-primary-container shadow-inner">
+<span class="material-symbols-outlined text-[16px]">dresser</span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em]">Consultoría Privada en Directo</span>
+</div>
+<h2 class="mt-4 font-display text-[2.75rem] leading-[3.25rem] text-surface">
+          ¿Desea un asesoramiento <span class="italic text-secondary-fixed">a medida para su piel?</span>
+</h2>
+<p class="mt-4 font-body-lg text-body-lg text-primary-fixed leading-relaxed">
+          Nuestras maestras cosmetólogas en París analizan su tono, subtono de tez y momento de vida para revelarle la paleta ideal y el ritual que mejor ensalza su propia historia.
+        </p>
+<!-- Interactive Form Card -->
+<div class="mt-10 rounded-xl bg-surface p-8 text-left text-on-surface shadow-2xl">
+<form class="space-y-6" id="consultation-form" onsubmit="event.preventDefault(); showConfirmation();">
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+<!-- Name -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-outline mb-1.5" for="name">
+                  Nombre Completo
+                </label>
+<input class="w-full rounded bg-surface-container-low px-4 py-3 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary" id="name" placeholder="Madame / Mademoiselle..." required="" type="text"/>
+</div>
+<!-- Email -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-outline mb-1.5" for="email">
+                  Correo Electrónico
+                </label>
+<input class="w-full rounded bg-surface-container-low px-4 py-3 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary" id="email" placeholder="su.direccion@dominio.com" required="" type="email"/>
+</div>
+</div>
+<!-- Age Selection Segment -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-outline mb-2.5">
+                Seleccione su Rango de Edad para la Maestra Consultora:
+              </label>
+<div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+<label class="flex cursor-pointer items-center justify-between rounded bg-surface-container-low p-3.5 transition-colors hover:bg-surface-container">
+<div class="flex items-center gap-3">
+<input checked="" class="text-primary accent-primary" name="age-tier" type="radio" value="15-25"/>
+<div>
+<span class="block font-headline-sm text-[15px] text-on-surface">15 a 25 años</span>
+<span class="block font-label-sm text-[11px] text-on-surface-variant">Flor Juvenil</span>
+</div>
+</div>
+</label>
+<label class="flex cursor-pointer items-center justify-between rounded bg-surface-container-low p-3.5 transition-colors hover:bg-surface-container">
+<div class="flex items-center gap-3">
+<input class="text-primary accent-primary" name="age-tier" type="radio" value="26-45"/>
+<div>
+<span class="block font-headline-sm text-[15px] text-on-surface">26 a 45 años</span>
+<span class="block font-label-sm text-[11px] text-on-surface-variant">Elegancia Plena</span>
+</div>
+</div>
+</label>
+<label class="flex cursor-pointer items-center justify-between rounded bg-surface-container-low p-3.5 transition-colors hover:bg-surface-container">
+<div class="flex items-center gap-3">
+<input class="text-primary accent-primary" name="age-tier" type="radio" value="46-70"/>
+<div>
+<span class="block font-headline-sm text-[15px] text-on-surface">46 a 70+ años</span>
+<span class="block font-label-sm text-[11px] text-on-surface-variant">Nobleza Serena</span>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Notes -->
+<div>
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-outline mb-1.5" for="concerns">
+                Inquietud principal de belleza o ritual buscado (Opcional)
+              </label>
+<textarea class="w-full rounded bg-surface-container-low px-4 py-2.5 font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary" id="concerns" placeholder="Ejemplo: Deseo una base luminosa que no resalte líneas o un labial mate confortable..." rows="2"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="w-full rounded bg-primary py-4 font-label-md text-label-md uppercase tracking-[0.18em] text-on-primary shadow-lg transition-all hover:bg-on-primary-fixed-variant" type="submit">
+              Reservar Cita Virtual Gratuita (30 min)
+            </button>
+<div class="hidden rounded bg-secondary-container p-4 text-center text-on-secondary-container font-body-sm" id="confirmation-message">
+<span class="material-symbols-outlined text-[20px] align-middle mr-1">task_alt</span>
+              Su solicitud ha sido recibida con distinción. Nuestra consejera se comunicará dentro de las próximas 24 horas.
+            </div>
+</form>
+</div>
+<p class="mt-6 font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim">
+          Consultas realizadas vía enlace privado confidencial • Sin costo ni compromiso de compra
+        </p>
+</div>
+</div>
+</section>
+<!-- Interactive script for carousel & UI behavior -->
+<script>
+    (function() {
+      const track = document.getElementById('product-track');
+      const prevBtn = document.getElementById('carousel-prev');
+      const nextBtn = document.getElementById('carousel-next');
+      const dots = document.getElementById('carousel-dots')?.children;
+      
+      let currentIndex = 0;
+      const cardWidth = 360 + 24; // card width approx + gap
+
+      function updateCarousel() {
+        if (!track) return;
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        if (dots) {
+          for (let i = 0; i < dots.length; i++) {
+            if (i === currentIndex) {
+              dots[i].className = 'h-1.5 w-8 rounded-full bg-primary transition-all';
+            } else {
+              dots[i].className = 'h-1.5 w-2 rounded-full bg-outline-variant transition-all';
+            }
+          }
+        }
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+          if (currentIndex < 2) {
+            currentIndex++;
+          } else {
+            currentIndex = 0;
+          }
+          updateCarousel();
+        });
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', function() {
+          if (currentIndex > 0) {
+            currentIndex--;
+          } else {
+            currentIndex = 2;
+          }
+          updateCarousel();
+        });
+      }
+
+      window.showConfirmation = function() {
+        const msg = document.getElementById('confirmation-message');
+        if (msg) {
+          msg.classList.remove('hidden');
+        }
+      };
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface pt-16 pb-12"><div class="max-w-[1440px] mx-auto px-6 lg:px-20"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 pb-16"><div class="lg:col-span-2 space-y-4"><div class="flex items-center gap-2"><span class="font-headline-md text-headline-md text-primary">AURELIA</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.2em]">Maison de Beauté</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Fundada en 1928 en el corazón de París, Aurelia consagra la cosmética como una obra de arte viva. Fórmulas botánicas transmitidas de abuelas a nietas, cultivando una belleza atemporal y serena para cada edad de la mujer.</p><div class="pt-2"><span class="font-headline-sm text-headline-sm italic text-tertiary">"La gracia no tiene edad; es una cadencia perpetua."</span></div></div><div><h4 class="font-label-md text-label-md uppercase text-secondary tracking-widest mb-4">Por Edad y Estilo</h4><ul class="space-y-2.5"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Primeras Esencias (15-25)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Esplendor Radiante (26-45)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Madurez Majestuosa (46-70+)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Guía de Tez Transgeneracional</li></ul></div><div><h4 class="font-label-md text-label-md uppercase text-secondary tracking-widest mb-4">Fórmulas Botánicas</h4><ul class="space-y-2.5"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Polvos de Arroz Clásicos</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Extracto de Rosa Damascena</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Bálsamos de Cera de Abeja</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Pigmentos Minerales Puros</li></ul></div><div><h4 class="font-label-md text-label-md uppercase text-secondary tracking-widest mb-4">Servicio de Asesoría</h4><ul class="space-y-2.5"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Diagnóstico de Piel en Directo</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Cita con la Maquilladora</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Grabado de Frascos &amp; Relicarios</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Envíos y Devoluciones Finas</li></ul></div><div class="space-y-4"><h4 class="font-label-md text-label-md uppercase text-secondary tracking-widest">Gaceta de la Belleza</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Reciba correspondencia mensual con secretos de tocador y lanzamientos de edición limitada.</p><div class="flex flex-col gap-2"><input class="bg-surface-container-lowest px-3 py-2 text-on-surface font-body-sm text-body-sm rounded focus:outline-none" placeholder="Su correo distinguido..." type="email"/><button class="bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest py-2 px-4 rounded hover:bg-on-primary-fixed-variant transition-colors" type="button">Subscribirse</button></div></div></div><div class="py-8 bg-surface-container rounded px-6 flex flex-wrap items-center justify-around gap-6 mb-12"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-2xl">eco</span><div class="flex flex-col"><span class="font-label-md text-label-md uppercase text-on-surface tracking-wider">Cruelty-Free Verificado</span><span class="font-body-sm text-body-sm text-on-surface-variant">Sin experimentación animal</span></div></div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-2xl">diamond</span><div class="flex flex-col"><span class="font-label-md text-label-md uppercase text-on-surface tracking-wider">Minerales Puros</span><span class="font-body-sm text-body-sm text-on-surface-variant">Sin talcos abrasivos ni toxinas</span></div></div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-2xl">verified_user</span><div class="flex flex-col"><span class="font-label-md text-label-md uppercase text-on-surface tracking-wider">Testado Dermatológico</span><span class="font-body-sm text-body-sm text-on-surface-variant">Apto para pieles juveniles y maduras</span></div></div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-2xl">history_edu</span><div class="flex flex-col"><span class="font-label-md text-label-md uppercase text-on-surface tracking-wider">Sello de Patrimonio 1928</span><span class="font-body-sm text-body-sm text-on-surface-variant">Fabricación artesanal francesa</span></div></div></div><div class="flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><p>© 1928–2025 Aurelia Maison de Beauté Paris. Todos los derechos reservados.</p><div class="flex gap-6 font-label-sm text-label-sm uppercase tracking-wider"><span class="hover:text-primary transition-colors cursor-pointer">Aviso Legal</span><span class="hover:text-primary transition-colors cursor-pointer">Privacidad de Salón</span><span class="hover:text-primary transition-colors cursor-pointer">Carta Ética</span></div></div></div></footer></body></html>
